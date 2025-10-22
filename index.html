@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="index.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolis Gisela Ruiz</title>
+  <meta autor="Lionnel Laguna Fernandez" />
+  <meta name="description" content="Portafolis Lionnel Laguna Fernandez" />
+  <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript, DAM, web, software" />
+  <title>Lionnel Laguna Fernandez | Software Developer</title>
+  <!--Bootstrap CSS i icones-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" href="/images/Img_Logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">
+          <img src="images/Img_Logo.png" alt="icona" width="50" />
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobremi">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#webdesign">Web design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projectes-video">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacte">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--section HERO  (secció principal)-->
+  <section class="hero align-items-stretch">
+    <div>
+      <img class="hero-imatge-developer" src="images/Img_perfil.png" alt="foto personal" />
+      <h1>Hi, Lionnel Laguna Fernandez</h1>
+      <h2>Student of DAM</h2>
+    </div>
+    <div class="hero-inferior">
+      <img class="img-fluid" src="images/Img_Programacion.jpg" alt="imatge ordinador i llenguatges" />
+    </div>
+  </section>
+  <!--section sobre mi-->
+  <section id="sobremi" class="about-me dark-section">
+    <div>
+      <h2 class="section-title">Learn more about me</h2>
+      <p class="section-text">I'm a student of DAM and I'm learning web development</p>
+      <!--botó descarregar cv-->
+      <div class="text-center">
+        <a href="document.pdf" download class="btn btn-primary btn-responive">
+          📄 Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--seccio experiència-->
+  <section class="experiencia white-section">
+    <div class="container text-center">
+      <!--tenim una fila -->
+      <div class="row">
+        <!--a dins de la fila hi haurà 3 columnes, una per cada experiencia o coneixement-->
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-filetype-html"></i>
+          <p class="experiencia-title">Web development</p>
+          <p></p>
+          <div class="badges-contenedor">
+            <span class="badge rounded-pill bg-primary">HTML</span>
+            <span class="badge rounded-pill bg-primary">CSS</span>
+            <span class="badge rounded-pill bg-primary">Javascript</span>
+            <span class="badge rounded-pill bg-primary">Bootstrap</span>
+            <span class="badge rounded-pill bg-primary">VUE</span>
+          </div>
+        </div>
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-filetype-java"></i>
+          <p class="experiencia-title">Java</p>
+          <p></p>
+          <div class="badges-contenedor">
+            <span class="badge rounded-pill bg-primary">Eclipse</span>
+            <span class="badge rounded-pill bg-primary">Javadox</span>
+            <span class="badge rounded-pill bg-primary">JDK</span>
+          </div>
+        </div>
+        <div class="columna col-12 col-md-4">
+          <i class="bi bi-cpu"></i>
+          <p class="experiencia-title">O.S.</p>
+          <p></p>
+          <div class="badges-contenedor">
+            <span class="badge rounded-pill bg-primary">Windows</span>
+            <span class="badge rounded-pill bg-primary">Linux</span>
+            <span class="badge rounded-pill bg-primary">Bash</span>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!--section web dessign-->
+  <section id="webdesign" class="projectes white-section d-flex flex-column">
+    <h2 class="section-title black-text">Web Design</h2>
+    <h3 class="section-description">Some web projects developed in the DAM cycle </h3>
+    <!--galeria de projectes-->
+    <div class="container text-center projectes-container">
+      <div class="row">
+        <!--projecte 1-->
+        <div class="projecte col-12 col-md-6 col-lg-4">
+          <img src="images/1.jpg" alt="projecte 1" />
+          <div class="overlay">
+            <p>Botiga</p>
+            <div class="icones-contenidor">
+              <a href="\exercicis\Exercici1\exercici1.html" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!--section projectes-->
+  <section id="projectes-video" class="projectes white-section d-flex flex-column">
+    <h2 class="section-title black-text">Aplication Development</h2>
+    <h3 class="section-description">Some aplications developed in the DAM cycle </h3>
+    <!--galeria de projectes-->
+    <div class="container text-center projectes-container">
+      <div class="row">
+
+
+        <!--video del projecte 1-->
+        <div class="projecte col-12 col-md-6 col-lg-4">
+          <div class="video">
+            <iframe src="/videos/TCGPokeBot_VIDEO.mp4" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h2>Telegram TCGPoketBot</h2>
+          <p>Bot de colecció de cartes Pokémon</p>
+        </div>
+        <div class="projecte col-12 col-md-6 col-lg-4">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/9_9e7hlwisI?si=tUVx3SQMB7YNS5v8" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h2>El meu projecte 2</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic animi deleniti quae! </p>
+        </div>
+        <div class="projecte col-12 col-md-6 col-lg-4">
+          <div class="video">
+            <iframe src="https://www.youtube.com/embed/9_9e7hlwisI?si=tUVx3SQMB7YNS5v8" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <h2>El meu projecte 3</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic animi deleniti quae! </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--section contacte-->
+  <footer id="contacte" class="dark-section d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-logo" src="images/Img_perfil.png" alt="logo" />
+    <p class="footer-text text-center">Contact me</p>
+    <div class="social-icons d-flex flex-wrap align-items-center justify-content-center">
+      <a href="mailto:homer@hotmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/homer-simpson" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/homer-simpson" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.twitter.com/homer-simpson" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-twitter"></i>
+      </a>
+    </div>
+    <div class="drets">Created by Lionnel Laguna Fernandez (2025) &#169;</div>
+  </footer>
+  <!-- carrega el javascript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
